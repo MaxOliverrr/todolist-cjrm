@@ -1,0 +1,29 @@
+body{
+  display: grid;
+  
+}
+.container {
+  max-width: 400px;
+  border-radius: 8px;
+  
+}
+
+input[type=text],
+input[type=text]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.todos-container li {
+  background: #484E53;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.form-control.is-invalid{
+  background-image: none;
+}

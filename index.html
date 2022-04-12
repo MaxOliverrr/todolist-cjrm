@@ -1,0 +1,75 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>To-do List | CJRM</title>
+  </head>
+  <body class="bg-warning align-items-center">
+    <div class="container bg-light bg-gradient py-4 shadow p-3">
+      <header class="text-center text-light mb-4">
+        <h1 class="mb-4 text-dark">To-do List</h1>
+        <form class="form-search">
+          <input
+            class="form-control search m-auto"
+            type="text"
+            name="search"
+            placeholder="Buscar to-do"
+            autocomplete="off"
+          />
+        </form>
+      </header>
+
+      <ul class="todos-container list-group mx-auto text-light">
+        <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        data-id="1"
+      >
+        <span>Trabalhar</span>
+        <i class="far fa-trash-alt delete" data-id="1"></i>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        data-id="2"
+      >
+        <span>Dormir</span>
+        <i class="far fa-trash-alt delete" data-id="2"></i>
+      </li>
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        data-id="3"
+      >
+        <span>Estudar</span>
+        <i class="far fa-trash-alt delete" data-id="3"></i>
+      </li>
+      </ul>
+
+      <form class="form-add-todo text-center my-4">
+        <label class="text-dark">Adicionar to-do</label>
+        <input
+          class="form-control add m-auto"
+          type="text"
+          name="add"
+          autofocus
+          autocomplete="off"
+        />
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
