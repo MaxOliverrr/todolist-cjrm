@@ -81,7 +81,7 @@ if (!checkFocusInput) {
 
 Ul.addEventListener("click", removeTodo);
 
-searchInput.addEventListener("keypress", searchTodo);
+searchInput.addEventListener("input", searchTodo);
 
 submitSearch.addEventListener("submit", (event) => event.preventDefault());
 
